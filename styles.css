@@ -1697,6 +1697,27 @@ ul {
     .what-we-do {
         padding: 70px 0;
     }
+
+    /* What We Do Section - Mobile */
+    .illustration img {
+        max-width: 250px;
+        width: 100%;
+    }
+
+    .decorated-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+        margin-bottom: 20px;
+    }
+
+    .main-text {
+        font-size: 1.1rem;
+        line-height: 1.8;
+    }
+
+    .what-we-do-content {
+        gap: 30px;
+    }
 }
 
 @media (max-width: 480px) {
@@ -1759,5 +1780,31 @@ ul {
     /* Container */
     .container {
         padding: 0 15px;
+    }
+
+    /* What We Do - Small Mobile */
+    .illustration img {
+        max-width: 200px;
+    }
+
+    .decorated-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .main-text {
+        font-size: 1rem;
+        line-height: 1.7;
+    }
+
+    .pagination-dots {
+        gap: 10px;
+        margin-bottom: 30px;
+    }
+
+    .dot {
+        width: 30px;
+        height: 30px;
+        font-size: 0.9rem;
     }
 }

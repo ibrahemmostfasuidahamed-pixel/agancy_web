@@ -1548,6 +1548,34 @@ ul {
    Responsive Design
    ======================================== */
 @media (max-width: 992px) {
+
+    /* Hero Section - Tablets */
+    .hero {
+        min-height: 80vh;
+        padding: 120px 20px 60px;
+    }
+
+    .hero-3d-canvas {
+        max-width: 400px;
+        max-height: 400px;
+        opacity: 0.5;
+    }
+
+    .hero-subtitle {
+        font-size: 1.2rem;
+    }
+
+    .hero-description {
+        font-size: 1.1rem;
+        margin-bottom: 35px;
+    }
+
+    .hero-btn {
+        padding: 16px 40px;
+        font-size: 1.1rem;
+    }
+
+    /* What We Do Section */
     .what-we-do-content {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1560,9 +1588,54 @@ ul {
     .illustration {
         order: -1;
     }
+
+    /* Logo */
+    .logo-img {
+        height: 80px;
+    }
 }
 
 @media (max-width: 768px) {
+
+    /* Hero Section - Mobile */
+    .hero {
+        min-height: auto;
+        padding: 100px 15px 40px;
+    }
+
+    .hero-3d-canvas {
+        display: none;
+        /* إخفاء الـ 3D على الموبايل لتحسين الأداء */
+    }
+
+    .hero-subtitle {
+        font-size: 1rem;
+        margin-bottom: 10px;
+    }
+
+    .hero-title {
+        font-size: 1.8rem;
+        margin-bottom: 15px;
+        line-height: 1.3;
+    }
+
+    .hero-description {
+        font-size: 1rem;
+        margin-bottom: 30px;
+        line-height: 1.6;
+    }
+
+    .hero-btn {
+        padding: 14px 30px;
+        font-size: 1rem;
+    }
+
+    /* Hide floating decorations on mobile */
+    .floating-icon {
+        display: none;
+    }
+
+    /* Navigation */
     .nav-menu {
         position: fixed;
         top: 0;
@@ -1587,14 +1660,16 @@ ul {
         z-index: 1001;
     }
 
-    .hero-title {
-        font-size: 1.8rem;
+    .logo-img {
+        height: 70px;
     }
 
+    /* Blog Grid */
     .blog-grid {
         grid-template-columns: 1fr;
     }
 
+    /* Partners */
     .partners-logos {
         gap: 30px;
     }
@@ -1603,25 +1678,75 @@ ul {
         height: 35px;
     }
 
+    /* CTA */
     .cta-content {
         flex-direction: column;
     }
 
+    /* Footer */
     .footer-grid {
         grid-template-columns: 1fr 1fr;
+    }
+
+    /* Sections Padding */
+    .blog-section,
+    .video-section {
+        padding: 60px 0;
+    }
+
+    .what-we-do {
+        padding: 70px 0;
     }
 }
 
 @media (max-width: 480px) {
-    .hero-btn {
-        padding: 12px 25px;
-        font-size: 1rem;
+
+    /* Hero Section - Small Mobile */
+    .hero {
+        padding: 90px 10px 30px;
     }
 
+    .hero-subtitle {
+        font-size: 0.9rem;
+        margin-bottom: 8px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 1.3;
+        margin-bottom: 12px;
+    }
+
+    .hero-description {
+        font-size: 0.95rem;
+        margin-bottom: 25px;
+    }
+
+    .hero-btn {
+        padding: 12px 25px;
+        font-size: 0.95rem;
+    }
+
+    /* Logo */
+    .logo-img {
+        height: 60px;
+    }
+
+    /* Sections */
     .section-title {
         font-size: 1.4rem;
     }
 
+    .blog-section,
+    .video-section {
+        padding: 50px 0;
+    }
+
+    .what-we-do {
+        padding: 60px 0;
+    }
+
+    /* Footer */
     .footer-grid {
         grid-template-columns: 1fr;
         text-align: center;
@@ -1629,5 +1754,10 @@ ul {
 
     .footer-links {
         margin-bottom: 20px;
+    }
+
+    /* Container */
+    .container {
+        padding: 0 15px;
     }
 }

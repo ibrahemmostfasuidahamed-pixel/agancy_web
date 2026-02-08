@@ -1,0 +1,25 @@
+[build]
+  # مجلد النشر (المجلد الحالي لأنه مشروع HTML ثابت)
+  publish = "."
+  
+  # لا يوجد أمر بناء لأنه مشروع HTML/CSS/JS ثابت
+  command = ""
+
+[[redirects]]
+  # إعادة توجيه جميع الطلبات إلى index.html (للـ SPA routing)
+  from = "/*"
+  to = "/index.html"
+  status = 200
+
+[build.environment]
+  # إعدادات البيئة (يمكن إضافة متغيرات هنا إذا لزم الأمر)
+  NODE_VERSION = "18"
+
+[[headers]]
+  # إضافة headers للأمان
+  for = "/*"
+  [headers.values]
+    X-Frame-Options = "DENY"
+    X-XSS-Protection = "1; mode=block"
+    X-Content-Type-Options = "nosniff"
+    Referrer-Policy = "strict-origin-when-cross-origin"
